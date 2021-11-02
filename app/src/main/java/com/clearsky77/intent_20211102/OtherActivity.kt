@@ -12,9 +12,13 @@ class OtherActivity : AppCompatActivity() {
         setContentView(R.layout.activity_other)
 
         btnReturnToMain.setOnClickListener {
-            val myIntent = Intent(this, MainActivity::class.java)
-            // 어디서 출발, 어디로 도착
-            startActivity(myIntent)
+//            아래는 화면이 쌓이는 문제가 생김
+//            val myIntent = Intent(this, MainActivity::class.java)
+//            // 어디서 출발, 어디로 도착
+//            startActivity(myIntent)
+
+//            화면 종료 처리 해주기
+          finish()
         }
     }
 }

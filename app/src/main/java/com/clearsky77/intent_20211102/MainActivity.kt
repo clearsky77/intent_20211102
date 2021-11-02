@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         btnSendMessage.setOnClickListener {
             val inputMessage = edtMessage.text.toString()
             val myIntent = Intent(this, OtherActivity::class.java)
+            myIntent.putExtra("message", inputMessage) // 필요 데이터 첨부
             startActivity(myIntent)
         }
     }

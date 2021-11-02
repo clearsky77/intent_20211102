@@ -15,5 +15,11 @@ class MainActivity : AppCompatActivity() {
                                 // 어디서 출발, 어디로 도착
             startActivity(myIntent)
         }
+
+        btnSendMessage.setOnClickListener {
+            val inputMessage = edtMessage.text.toString()
+            val myIntent = Intent(this, OtherActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }

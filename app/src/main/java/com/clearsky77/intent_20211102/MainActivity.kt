@@ -1,6 +1,7 @@
 package com.clearsky77.intent_20211102
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -34,6 +35,13 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("message", inputMessage) // 필요 데이터 첨부
             startActivityForResult(myIntent, REQ_CODE_FOR_NICKNAME)
             //                      목적지, 어느 데이터를 받아올 것이다.
+        }
+
+//        안드로이드 전화 화면
+        btnEditNickname.setOnClickListener {
+            val myUri = Uri.parse("tel:01021211003")
+            val myIntent = Intent(Intent.ACTION_DIAL, myUri)
+            startActivity(myIntent)
         }
 
     }

@@ -80,4 +80,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="문자보내기 (SANDTO)"/>
+    <Button
+        android:id="@+id/btnWebpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="웹페이지 열기 (FF14)"/>
 </LinearLayout>

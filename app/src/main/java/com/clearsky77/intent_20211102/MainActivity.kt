@@ -62,6 +62,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
+//        안드로이드 web 띄우기 (VIEW)
+        btnWebpage.setOnClickListener {
+            val myUri = Uri.parse("https://www.ff14.co.kr/main/")
+            val myIntent = Intent( Intent.ACTION_VIEW, myUri )
+            startActivity(myIntent)
+        }
+
 
     }
 

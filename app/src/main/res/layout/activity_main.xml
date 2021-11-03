@@ -12,34 +12,40 @@
         android:id="@+id/btnMoveToOther"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="다른 화면으로 이동"/>
+        android:text="다른 화면으로 이동" />
+
     <EditText
         android:id="@+id/edtMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="메시지를 입력하세요."/>
+        android:hint="메시지를 입력하세요." />
+
     <Button
         android:id="@+id/btnSendMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="다른 화면으로 이동"/>
+        android:text="다른 화면으로 이동" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <EditText
-        android:id="@+id/"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Nayring"/>
+
+        <EditText
+            android:id="@+id/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nayring" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-    <Button
-        android:id="@+id/"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="닉네임 변경"/>
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임 변경" />
     </LinearLayout>
 </LinearLayout>

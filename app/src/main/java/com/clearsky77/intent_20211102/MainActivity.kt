@@ -69,6 +69,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
+//        안드로이트 마켓 띄우기
+        btnKakaoStore.setOnClickListener {
+            val myUri = Uri.parse("market://details?id=com.kakao.talk")
+            val myIntent = Intent( Intent.ACTION_VIEW, myUri )
+            startActivity(myIntent)
+        }
+
 
     }
 

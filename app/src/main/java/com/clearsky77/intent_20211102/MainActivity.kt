@@ -37,13 +37,28 @@ class MainActivity : AppCompatActivity() {
             //                      목적지, 어느 데이터를 받아올 것이다.
         }
 
-//        안드로이드 전화 화면
+//        안드로이드 전화 화면 (DAIL)
         btnDial.setOnClickListener {
             val inputPhoneNum = edtPhoneNum.text.toString()
             val myUri = Uri.parse("tel:${inputPhoneNum}")
             val myIntent = Intent(Intent.ACTION_DIAL, myUri)
             startActivity(myIntent)
         }
+//        안드로이드 전화 화면 (CALL)
+        btnCall.setOnClickListener {
+            val inputPhoneNum = edtPhoneNum.text.toString()
+            val myUri = Uri.parse("tel:${inputPhoneNum}")
+            val myIntent = Intent(Intent.ACTION_CALL, myUri)
+            startActivity(myIntent)
+        }
+//        안드로이드 문자 보내기 (SANDTO)
+        btnSms.setOnClickListener {
+            val inputPhoneNum = edtPhoneNum.text.toString()
+            val myUri = Uri.parse("smsto:${inputPhoneNum}")
+            val myIntent = Intent(Intent.ACTION_SENDTO, myUri)
+            startActivity(myIntent)
+        }
+
 
     }
 

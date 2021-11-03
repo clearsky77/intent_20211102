@@ -56,6 +56,9 @@ class MainActivity : AppCompatActivity() {
             val inputPhoneNum = edtPhoneNum.text.toString()
             val myUri = Uri.parse("smsto:${inputPhoneNum}")
             val myIntent = Intent(Intent.ACTION_SENDTO, myUri)
+
+            myIntent.putExtra("sms_body","지금 Clearsky77의 MyCharacter를 다운 받으세요!")
+
             startActivity(myIntent)
         }
 

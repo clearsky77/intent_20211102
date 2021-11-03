@@ -20,4 +20,6 @@ class EditNicknameActivity : AppCompatActivity() {
             finish() // 이전 화면으로 돌아간다.
         }
     }
+
+
 }

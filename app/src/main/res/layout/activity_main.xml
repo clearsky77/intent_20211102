@@ -36,11 +36,12 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
-        <EditText
-            android:id="@+id/"
+        <TextView
+            android:id="@+id/txtNickname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Nayring" />
+            android:textSize="20sp"
+            android:text="Nayring" />
 
         <TextView
             android:layout_width="0dp"

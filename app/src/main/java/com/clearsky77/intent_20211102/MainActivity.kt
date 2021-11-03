@@ -38,8 +38,9 @@ class MainActivity : AppCompatActivity() {
         }
 
 //        안드로이드 전화 화면
-        btnEditNickname.setOnClickListener {
-            val myUri = Uri.parse("tel:01021211003")
+        btnDial.setOnClickListener {
+            val inputPhoneNum = edtPhoneNum.text.toString()
+            val myUri = Uri.parse("tel:${inputPhoneNum}")
             val myIntent = Intent(Intent.ACTION_DIAL, myUri)
             startActivity(myIntent)
         }
